@@ -5,7 +5,7 @@
   ],
   "build": {
     "targetFolder": "dist",
-    "sourceFolder": "webapp",
+    "sourceFolder": "helloworld",
     "buildRequired": true
   },
   "generation": [

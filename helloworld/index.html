@@ -12,19 +12,16 @@
          data-sap-ui-compatVersion="edge"
          data-sap-ui-preload="async"          
          data-sap-ui-resourceroots='{
-            "sap.ui.demo.wt": "./"
+            "sap.ui.helloworld.namespace": "./"
          }' >
       </script>
       <script>
-      	sap.ui.getCore().attachInit(function () {
-      		//alert("Bootstrapping successful. SAPUI5 is ready to go!");
-      		sap.ui.xmlview({
-      			viewName : "sap.ui.demo.wt.view.App"
-      		}).placeAt("content");
-      		// new sap.m.Text({
-      		// 	text : "Hello World"
-      		// }).placeAt("content");
-      	});
+         sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+               name : "sap.ui.helloworld.namespace"
+            }).placeAt("content");
+
+         });
       </script>
    </head>
    <body class="sapUiBody" id="content">

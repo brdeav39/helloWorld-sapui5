@@ -6,7 +6,7 @@ sap.ui.define([
    "use strict";
    return UIComponent.extend("sap.ui.helloworld.namespace.Component", {
             metadata : {
-		rootView: "sap.ui.helloworld.namespace.view.App"
+				manifest : "json"
 	},
       init : function () {
          // call the init function of the parent
@@ -19,12 +19,6 @@ sap.ui.define([
          };
          var oModel = new JSONModel(oData);
          this.setModel(oModel);
-
-         // set i18n model
-         var i18nModel = new ResourceModel({
-            bundleName : "sap.ui.helloworld.namespace.i18n.i18n"
-         });
-         this.setModel(i18nModel, "i18n");
       }
    });
 });

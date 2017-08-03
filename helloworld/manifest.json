@@ -1,7 +1,8 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"id": "helloworld",
+		"version": "1.5.0",
+		"id": "sap.ui.helloworld.namespace",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -16,6 +17,7 @@
 	},
 
 	"sap.ui": {
+		"version": "1.5.0",
 		"technology": "UI5",
 		"icons": {
 			"icon": "",
@@ -38,8 +40,9 @@
 	},
 
 	"sap.ui5": {
+		"version": "1.5.0",
 		"rootView": {
-			"viewName": "helloworld.view.View1",
+			"viewName": "sap.ui.helloworld.namespace.view.App",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -62,7 +65,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "helloworld.i18n.i18n"
+					"bundleName": "sap.ui.helloworld.namespace.i18n.i18n"
 				}
 			}
 		},

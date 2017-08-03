@@ -1,7 +1,6 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"version": "1.5.0",
 		"id": "sap.ui.helloworld.namespace",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
@@ -40,7 +39,6 @@
 	},
 
 	"sap.ui5": {
-		"version": "1.5.0",
 		"rootView": {
 			"viewName": "sap.ui.helloworld.namespace.view.App",
 			"type": "XML"

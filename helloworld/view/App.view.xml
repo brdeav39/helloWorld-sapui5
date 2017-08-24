@@ -1,14 +1,37 @@
-<mvc:View
-	controllerName="sap.ui.helloworld.namespace.controller.App"
-   xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc">
-	<Button
-		text="{i18n>showHelloButtonText}"
-		press="onShowHello" />
-	<Input
-		value="{oModelRec>/recipient/name}"
-		description="Hello {oModelRec>/recipient/name}"
-		valueLiveUpdate="true"
-		width="60%"/>
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.helloworld.namespace.controller.App">
+	<Table noDataText="Drop column list items here and columns in the area above" id="tbl_Users" items="{oModelUsers>/data}">
+		<items>
+			<ColumnListItem id="__item0">
+				<cells>
+					<Text text="{oModelUsers>name}" id="__text0"/>
+					<Text text="{oModelUsers>id}" id="__text1"/>
+					<Text text="{oModelUsers>pos}" id="__text2"/>
+					<Text text="{oModelUsers>level}" id="__text3"/></cells>
+			</ColumnListItem>
+		</items>
+		<columns>
+			<Column id="__column0">
+				<header>
+					<Label text="Name" id="__label0"/>
+				</header>
+			</Column>
+			<Column id="__column1">
+				<header>
+					<Label text="Id #" id="__label1"/>
+				</header>
+			</Column>
+			<Column id="__column2">
+				<header>
+					<Label text="Position" id="__label2"/>
+				</header>
+			</Column>
+			<Column id="__column3">
+				<header>
+					<Text text="Level" id="__text6"/>
+				</header>
+			</Column>
+		</columns>
+	</Table><Button text="{i18n>showHelloButtonText}" press="onShowHello"/>
+	<Input value="{oModelRec>/recipient/name}" description="Hello {oModelRec>/recipient/name}" valueLiveUpdate="true" width="60%"/>
 	<!--<Text text="Hello World!" />-->
 </mvc:View>

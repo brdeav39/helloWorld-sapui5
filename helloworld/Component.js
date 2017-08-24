@@ -40,10 +40,10 @@ sap.ui.define([
 					level: "8"
 				}
 			};
-			var oModelRec = new JSONModel(oDataRec, "oModelRec");
-			var oModelUsers = new JSONModel(oDataUsers, "oModelUsers");
-			this.setModel(oModelRec);
-			this.setModel(oModelUsers);
+			var oModelRec = new JSONModel(oDataRec);
+			var oModelUsers = new JSONModel(oDataUsers);
+			this.setModel(oModelRec, "oModelRec");
+			this.setModel(oModelUsers,  "oModelUsers");
 		}
 	});
 });
